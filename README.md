@@ -6,11 +6,11 @@ $ cd /tmp && rm -f -R semverbuild && git clone https://github.com/karamani/semve
 
 # Examples
 ```
-gobuild -l1 # autoincrement major version
+svbuild -l1 # autoincrement major version
 
-gobuild -l2 # autoincrement minor version
+svbuild -l2 # autoincrement minor version
 
-gobuild -l3 # autoincrement path
+svbuild -l3 # autoincrement path
 
-gobuild # autoincrement path
+svbuild # autoincrement path
 ```
