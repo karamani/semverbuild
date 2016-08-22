@@ -14,3 +14,6 @@ svbuild -l3 # autoincrement path
 
 svbuild # autoincrement path
 ```
+
+# Thanks
+Thank colleagues from the site [stackoverflow.com](http://stackoverflow.com/questions/27320359/script-for-automatically-adding-a-new-version-number-to-current-git-branch)
