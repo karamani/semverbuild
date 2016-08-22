@@ -14,9 +14,8 @@ compile:
 	go install
 
 build:
-	echo $(NEW_VER); \
 	if [ -z "$(NEW_VER)" ] ; then \
-		echo "Не могу создать версию"; \
+		echo "Fatal: it's impossible to create new version"; \
 	else \
 		go build -ldflags "-X main.Version=$(NEW_VER)" -o "bin/makego"; \
 	fi
