@@ -1,7 +1,7 @@
 configure:
 	curl https://glide.sh/get | sh
 	glide install
-	cd /tmp && rm -f -R semverbuild && git clone https://github.com/karamani/semverbuild && cp semverbuild/svbuild ~/bin/svbuild
+	cd /tmp && rm -f -R semverbuild && git clone https://github.com/karamani/semverbuild && cp semverbuild/svbuild $$GOPATH/bin/svbuild
 
 update:
 	glide up
