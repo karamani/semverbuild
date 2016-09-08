@@ -40,7 +40,7 @@ if [ -z "$GIT_COMMIT" ] ; then
     echo "Fatal: unknown git commit!" >&2
     exit 2
 fi 
-NEEDS_TAG=`git describe --contains $GIT_COMMIT`
+NEEDS_TAG=`git tag --contains`
 
 #only tag if no tag already (would be better if the git describe command above could have a silent option)
 if [ -z "$NEEDS_TAG" ]; then
