@@ -7,7 +7,7 @@ build:
 	if [ -z "$(newver)" ] ; then \
 		echo "Fatal: it's impossible to create new version"; \
 	else \
-		go build -ldflags "-X main.Version=$(newver)" -o "bin/makego"; \
+		go build -ldflags "-X main.Version=$(newver)" -o "bin/$${PWD##*/}"; \
 	fi
 
 patch: export VER_LVL = l3
